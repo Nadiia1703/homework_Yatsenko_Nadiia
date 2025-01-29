@@ -1,8 +1,5 @@
 function sayHello(name, surname, someWord) {
-    //Some comment
-        console.log ('Hello ${name} ${surname) ${someWord}');
+   
+        console.log (`Hello ${name} ${surname} ${someWord}`);
 } 
-// end fuction
-sayHello('Nadin', 'Yatsenko');
-
-//done
+sayHello('Nadin', 'Yatsenko', 'Welcome!');
