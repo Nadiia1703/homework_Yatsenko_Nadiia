@@ -1,10 +1,10 @@
 ## Домашне завдання по курсу QA-AUTOMATION-TYPESCRIPT
 
-_Виконавець Nadiia1703_
+_Виконавець Nadiia Yatsenko_
 
 :white_check_mark:lesson2 ***система контролю версій git***
 
-:large_orange_diamond:lesson3 - на перевірці ***Змінніта типи даних***
+:large_orange_diamond:lesson3 - на перевірці ***Змінні та типи даних***
 
 :white_large_square:lesson4
 
