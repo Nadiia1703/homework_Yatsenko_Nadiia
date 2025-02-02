@@ -4,7 +4,7 @@ _Виконавець Nadiia Yatsenko_
 
 :white_check_mark:lesson2 ***система контролю версій git***
 
-:large_orange_diamond:lesson3 - на перевірці ***Змінні та типи даних***
+:large_orange_diamond:lesson3 -  ***Змінні та типи даних***
 
 :white_large_square:lesson4
 
