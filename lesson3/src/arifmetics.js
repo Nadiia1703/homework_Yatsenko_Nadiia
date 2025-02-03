@@ -8,13 +8,14 @@ function playTypeNumber(){
 
     console.log('math');
 
-    const n = Number(`123`);
+    const n = Number(`125`);
     const v = 4;
 
     console.log(n+v);
     console.log(n % v);
     console.log(2 ** 3);
     console.log(4 ** (1/2));
+    console.log(n ** (1/3));
 }
 
 function playTypeString(){
