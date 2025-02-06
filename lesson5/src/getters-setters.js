@@ -1,26 +1,50 @@
-export class sameClass {   // export можна викоритовувати в інших класах
-    #privatname; // приватна зміна
-    constructor(name) {// конструктор
-        this.#privatname = name;
+class sameClass {
+    #privateName;
+    constructor(name) {
+        this.#privateName = name;
     }
 
     get name(){
-        return this.#privatname;
+        return this.#privateName;
     }
 
     set name(name){
-        if (!name){
-            throw new Error('Name is eerrror')
+        if (name.length < 4){
+            console.log('Name is short');
+            return;
         }else{
-            this.#privatname = name;
+            this.#privateName = name;
         }
+    }
+    get fullName(){
+        return this.#privateName + ' Doe';
+    }
+    get fullNameGetter(){
+        return this.#privateName + ' FOL';
     }
 }
 
-const sameClass = new sayName('Nadin');
-console.log(sameClass.name)
+const myClass = new sameClass('Nadia');
+console.log(myClass.name);
+console.log(myClass.fullName);
+
+myClass.name = 'Bor';
+console.log(myClass.name);
+console.log(myClass.fullNameGetter);
 
 
-//для set 
-sameClass.name = 'Curl';  // set  змінити  name
-console.log(sameClass.name); // get
+function yourBirthday(name, birthday){
+    this.name = name;
+    this.birthday = birthday;
+
+    Object.defineProperty(this, 'age', {
+        get(){
+            const todayYear = new Date().getFullYear();
+            return todayYear - this.birthday.getFullYear();
+        }
+    });
+}
+
+const Stud = new yourBirthday('Nadin', new Date(2000, 1, 1));
+console.log(Stud);
+console.log(Stud.age);
