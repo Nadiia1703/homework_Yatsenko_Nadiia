@@ -1,25 +1,37 @@
-const obj1 = {
-    name: 'Joe',
-    surname: 'Gold',
-    props: {
-        age: 33,
-        gender: 'male',
-        'country of orirgia': 'USA'
-    }
-};
+function StudentList(name, surname, lesson){
+    this.name = name;
+    this.surname = surname;
+    this.lesson = lesson;
+    this.sayHi = function(){
+        console.log ('Hello  ' + this.name + ' ' + this.surname);
+        console.log ('your lesson:' + this.lesson);
+    };
+}
 
-let obj2 = {};
-obj2 = obj1;
+const obj1 = new StudentList("Teresa", "Green", {sublesson: 'objects, cycles'});
+obj1.name = 'Maria';
+obj1.sayHi();
+console.log(obj1);
 
-obj2.name = 'Nadin';
-obj1.name = 'Nadin33';
-obj2.surname = 'Green';
-obj2['new field'] = 'new value';
+function Calculator(a, b){
+    this.a = a;
+    this.b = b;
+    this.sum = function (){
+        return this.a + this.b;
+    };
+    this.mul = function(){
+        return this.a * this.b;
+    };
+    this.dev = function(){
+        return this.a / this.b;
+    };
+    this.min = function(){
+        return this.a - this.b;
+    };
+}
 
-console.log(obj2 === obj1);
-console.log('-------');
-console.log(obj1, obj2);
-console.log(Object.keys(obj1));
-console.log(Object.values(obj1));
-console.log(Object.values(obj1.props));
-console.log(Object.entries(obj1));
+const calc = new Calculator(2, 5);
+console.log('SUM: ' + calc.sum());
+console.log('Minus: ' + calc.min());
+console.log('Mul: ' + calc.mul());
+console.log('Dev: ' + calc.dev());
