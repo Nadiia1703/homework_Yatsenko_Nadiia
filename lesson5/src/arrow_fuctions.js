@@ -6,7 +6,7 @@ const sumArrWithoutString =(arr ) => arr.reduce((sum, current) => {
 
 
 const a = [1,3,6,'7'];
-const b = ['1','3','rerer',9];
+const b = ['1','3','test',9];
 
 console.log(sumArr(a));
 console.log(sumArrWithoutString(a));
