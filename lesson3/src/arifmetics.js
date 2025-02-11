@@ -8,7 +8,7 @@ function playTypeNumber(){
 
     console.log('math');
 
-    let n = Number(`123`);
+    const n = Number(`123`);
     const v = 4;
 
     console.log(n+v);
@@ -32,16 +32,16 @@ function playTypeString(){
     const s6= String('firsr');
     const s7= String('Secont');
     console.log(s6 +'__' + s7);
-    
+
     console.log('---------------------');
-    
-    let john = {
+
+    const john = {
         name: "John",
         sayHi: function() {
-             alert("Hello, frend!");
-             }
-        };
-      
+            alert("Hello, frend!");
+        }
+    };
+
     console.log(john);
 
     console.log('---------------------');
@@ -51,30 +51,30 @@ function playTypeString(){
     const a3 = `2`;
     console.log(a1 == a2, a1 != a2, a1 < a2, a1 > a2);
     console.log(a1 == a3, a1 === a3);
-    
+
     console.log('---------------------');
-    let str1 = "hello\nWork";
+    const str1 = "hello\nWork";
     console.log(str1);
 
     console.log('---------------------');
 
     const numA = Number(2);
     const strA = String(`33`);
-    
+
     console.log ('number + string  ' + numA + strA);
 }
 
 function numberForBinary(){
-    let num = 248;
+    const num = 248;
     console.log('Binary: ' + num.toString(2));
     console.log('Binary16: ' + num.toString(16));
-    
-   }
 
-function numberRouding(n) {
-    let v = 125.6666;
+}
+
+function numberRouding() {
+    const v = 125.6666;
     console.log('numberRouding ' + v.toFixed(1));
-    
+
 }
 
 playTypeNumber();
