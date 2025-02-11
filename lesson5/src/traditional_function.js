@@ -3,7 +3,7 @@ function sayHello(){
     console.log('Hello word');
 }
 
-function doSomeJob(name, age, job = {role: 'Unemploied'}){
+function doSomeJob(name, age, job = {role: 'Unemployed'}){
     sayName(name);
     sayAge(age);
     sayJob(job);
