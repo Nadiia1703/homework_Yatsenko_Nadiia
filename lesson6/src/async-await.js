@@ -2,8 +2,9 @@ async function myAsyncFunction(url) {
     const responce = await fetch(url);
     console.log('responce ', responce);
 
-    const json = await responce.json;
+    const json = await responce.json();
     console.log('body ', json);
+    console.log("Value of 'totvs':", json.totvs);
     return json;
 }
 
