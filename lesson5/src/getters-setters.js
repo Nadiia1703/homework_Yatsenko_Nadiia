@@ -12,7 +12,7 @@ class sameClass {
         if (name.length < 4){
             console.log('Name is short');
             return;
-        }else{
+        } else {
             this.#privateName = name;
         }
     }
@@ -45,6 +45,6 @@ function yourBirthday(name, birthday){
     });
 }
 
-const Stud = new yourBirthday('Nadin', new Date(2000, 1, 1));
+const Stud = new yourBirthday('Nadia', new Date(2000, 1, 1));
 console.log(Stud);
 console.log(Stud.age);
