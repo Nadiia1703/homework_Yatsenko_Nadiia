@@ -79,9 +79,9 @@ console.log(cont);
 
 enum CardinalDirections {
     North = 'North',
-    East = "East",
-    South = "South",
-    West = "West"
+    East = 'East',
+    South = 'South',
+    West = 'West'
 };
 // logs "North"
 console.log(CardinalDirections.North);
