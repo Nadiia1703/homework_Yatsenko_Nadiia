@@ -5,7 +5,7 @@ export interface Results {
     };
 }
 
-interface Ship {
+export interface Ship {
     ship_id: string;
     ship_name: string;
     ship_model?: string;
@@ -53,16 +53,3 @@ export async function getMyJson(): Promise<Results> {
     };
 }
 
-(async () => {
-    try {
-        const data = await getMyJson();
-        data.info.info1 = 'test text';
-        console.log(data.info.info1);
-        console.log('Ship_id: ', data.result[0].ship_id);
-        console.log('Ship_name: ', data.result[0].ship_name);
-        console.log('missions name: ', data.result[1].missions[3].name); //виклик помилки result[0]
-    } catch (err: unknown){
-        console.log('Data doesn`t exist: ', err);
-        throw (err);
-    }
-})();

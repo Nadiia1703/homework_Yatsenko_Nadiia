@@ -1,7 +1,5 @@
-import { getMyJson } from './interface-fetch';
-
 export class ResultsClass {
-    private _ship: string;
+    public  _ship: string;
 
     public get ship(): string{
         return this._ship;
@@ -28,7 +26,7 @@ export class ResultsClass {
 
 
 }
-interface Ship {
+export interface Ship {
     ship_id: string;
     ship_name: string;
     ship_model?: string;
@@ -54,17 +52,17 @@ interface Ship {
     image: string | null;
 }
 
-interface Position {
+export interface Position {
     latitude: number | null;
     longitude: number | null;
 }
 
-interface Mission {
+export interface Mission {
     name: string;
     flight: number;
 }
 
-class SummaryWeightOfShips{
+export class SummaryWeightOfShips{
     public infos:  {
         ship_id: string;
         ship_name: string;
@@ -89,17 +87,3 @@ class SummaryWeightOfShips{
     }*/
 }
 
-(async () => {
-    try {
-        const data = await getMyJson();
-        console.log('Smt interface', data.result[0].ship_id);
-        const data2 = new ResultsClass('', data.result as Ship[]);
-        const summery = new SummaryWeightOfShips(data2);
-        //summery.summeryShip();
-        console.log('************ ');
-        console.log('totalWeightKg: ', summery.totalWeightKg);
-        console.log('info about ship: ', summery.infos);
-    } catch (err) {
-        console.log('Error text ', err);
-    }
-})();
