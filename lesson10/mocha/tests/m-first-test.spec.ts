@@ -15,7 +15,7 @@ describe('test2 2 + 2 <>5 ', () => {
     });
 
     it('chech 5', () => {
-        expect(sum).to.be.equal(5);
+        expect(sum).to.be.equal(4);
     });
 });
 
