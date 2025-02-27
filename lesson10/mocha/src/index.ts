@@ -11,7 +11,7 @@ const saturn = new SaturnPlanet('Saturn', 5666);
 const venera = new SaturnPlanet('Venera', 5666);
 //console.log(venera.getInfo());
 
-function getPlanetInfo(planet: IPlanet): void {
+export function getPlanetInfo(planet: IPlanet): void {
     console.log('getPlanetInfo', planet.getInfo());
 }
 
