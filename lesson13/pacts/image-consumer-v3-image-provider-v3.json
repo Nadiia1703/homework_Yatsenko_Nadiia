@@ -1,0 +1,121 @@
+{
+  "consumer": {
+    "name": "image-consumer-v3"
+  },
+  "interactions": [
+    {
+      "description": "A request to get image",
+      "providerStates": [
+        {
+          "name": "Image exists"
+        }
+      ],
+      "request": {
+        "headers": {
+          "accept": "application/json",
+          "x-api-key": "live_efiyBhhW7Iodef8KnPHKrZoegB4y80F1j5YpLJiauxN0Di0dzI8Nqy122OokaPHZ"
+        },
+        "method": "GET",
+        "path": "/images"
+      },
+      "response": {
+        "body": [
+          {
+            "breed_ids": "abob,ycho",
+            "breeds": [],
+            "created_at": "2025-03-09T19:06:09.000Z",
+            "height": 531,
+            "id": "acW-V0IEa",
+            "original_filename": "istockphoto-1443562748-612x612.jpg",
+            "sub_id": "test",
+            "url": "https://cdn2.thecatapi.com/images/acW-V0IEa.jpg",
+            "width": 612
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json",
+          "content-type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A request to get images",
+      "providerStates": [
+        {
+          "name": "Image exists"
+        }
+      ],
+      "request": {
+        "headers": {
+          "accept": "application/json",
+          "x-api-key": "<you api key>"
+        },
+        "method": "GET",
+        "path": "/images"
+      },
+      "response": {
+        "body": [
+          {
+            "breed_ids": "abob,ycho",
+            "breeds": [],
+            "created_at": "2025-02-27T18:27:29.000Z",
+            "height": 391,
+            "id": "Urb5s2Zhy",
+            "original_filename": "the_cat_1.jpg",
+            "sub_id": "VILE",
+            "url": "https://cdn2.thecatapi.com/images/Urb5s2Zhy.jpg",
+            "width": 640
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "14.0.0"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "image-provider-v3"
+  }
+}
