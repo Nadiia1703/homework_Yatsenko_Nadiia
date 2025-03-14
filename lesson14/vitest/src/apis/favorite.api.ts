@@ -1,24 +1,23 @@
 import { VoteDto } from 'src/dto/the-cats-api/votes.dto';
 import { IApiService } from 'src/service/interface/i-api.service';
 
-export class VotesApi {
+export class FavoriteApi {
     public constructor(private apiService: IApiService) {}
 
-    public async addVoteToImage(imageId: string, subId: string, val: number): Promise<[Response, VoteDto]> {
+    public async addFavoriteToImage(imageId: string, subId: string): Promise<[Response, VoteDto]> {
         const body = {
             image_id: imageId,
-            sub_id: subId,
-            value: val
+            sub_id: subId
         };
 
-        const response = await this.apiService.post('/votes', body);
+        const response = await this.apiService.post('/favourites', body);
         const responseJson = await response.json();
 
         return await [response, responseJson];
     }
 
-    public async getMyVote(voteId: number): Promise<[Response, VoteDto]> {
-        const response = await this.apiService.get(`/votes/${voteId}`);
+    public async getMyFavourites(): Promise<[Response, VoteDto]> {
+        const response = await this.apiService.get('/favourites');
         const responseJson = await response.json();
 
         return await [response, responseJson];

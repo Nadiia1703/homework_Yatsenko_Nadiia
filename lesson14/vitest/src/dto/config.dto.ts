@@ -5,8 +5,6 @@ export interface ConfigDto {
 
 export interface AuthConfigDto {
     theCatsApi: TheCatsApiAuthConfigDto;
-    jiraApi: JiraAuthConfigDto;
-    rdApi: RDAuthConfigDto;
 }
 
 export interface TheCatsApiAuthConfigDto {
@@ -26,8 +24,6 @@ export interface RDAuthConfigDto {
 
 export interface ApiConfigDto {
     theCatsApi: TheCatsApiConfigDto;
-    jira: JiraApiConfigDto;
-    rd: RDConfigDto;
 }
 
 export interface JiraApiConfigDto {

@@ -5,5 +5,5 @@ export interface VoteDto {
     id: number | null;
     value: number | null;
     image_id: string;
-    ecountry_code: string;
+    country_code: string;
 }
