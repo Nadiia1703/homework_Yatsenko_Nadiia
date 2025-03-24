@@ -1,0 +1,52 @@
+https://arx.com.ua/store/emtpl
+
+
+1-ша сторінка пошуку поля для вводу номера ТЗ 
+#plateNumber      
+
+//input[@id='plateNumber']
+
+після вводу номера - клікнуть на стрілочку
+button[type='button']   
+
+//button[@type='button']
+
+вікно вибору ручного вводу
+div .button__label   
+
+//div[@class="button__label"]
+
+Оберіть тип транспортного засобу:
+  #vehicleShortGroupB_vt_b .vehicle-type-button__image_alt   
+  
+  //div[@id="vehicleShortGroupB_vt_b"]   or  //div[@id="vehicleShortGroupB_vt_b"]//div[@class="vehicle-type-button__image_alt"]
+
+категорія ТЗ
+ ul li.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.select-one-input__item.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button[data-value="B1"]
+ or
+ ul li[data-value="B2"]
+
+ //ul/li[1]
+
+  вибір міста 
+  //div[@class="shortcut-data"]//span[text()="Київ "]
+
+  Mark
+  input[id="quotation.mtplContract.vehicle.brand"]
+
+  //input[@id="quotation.mtplContract.vehicle.brand"]
+
+ рік ТЗ
+
+//div[@id="quotation.mtplContract.vehicle.constructionYear"] 
+
+рік
+
+//div[@id="quotation.mtplContract.vehicle.ownerBirthYear"]
+
+кнопка
+span.button__label__text
+
+//div[@class="button__label"]
+//span[text()="Розрахунок"]
+
