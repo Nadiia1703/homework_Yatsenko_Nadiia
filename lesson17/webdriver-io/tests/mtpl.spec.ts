@@ -19,7 +19,7 @@ describe('MTPL test ', () => {
 
     it('First page - input plateNumber', async () => {
         await firstPage.open();
-        await firstPage.enterPlateNumber('АА1234АВ');
+        await firstPage.enterPlateNumber('АА1034АВ');
         await firstPage.proceedToManualEntry();
     });
 
