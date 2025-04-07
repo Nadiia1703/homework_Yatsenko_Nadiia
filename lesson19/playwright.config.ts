@@ -45,24 +45,12 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    "@eslint/js": "^9.19.0",
-    "@stylistic/eslint-plugin": "^3.0.0",
-    "@stylistic/eslint-plugin-ts": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.21.0",
-    "@typescript-eslint/parser": "^8.21.0",
-    "eslint": "^9.19.0",
-    "eslint-plugin-prettier": "^5.2.3",
-    "esrun": "^3.2.26",
-    "globals": "^15.14.0",
-    "prettier": "3.4.2",
-    "ts-node": "^10.9.2",
-    "typescript-eslint": "^8.21.0"
     },
 
-   /* {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },*/
+    {
+      name: 'Galaxy',
+      use: { ...devices['Galaxy Note 3'] },
+    },
 
     /* Test against mobile viewports. */
     // {

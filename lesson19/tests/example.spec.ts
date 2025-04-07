@@ -8,7 +8,7 @@ test('Rozetka Catalog Tests', async ({ page }) => {
   testPage = page;
   const catalog = new RztWorkPage(page);
   await catalog.goTo();
-  await catalog.clickCatalog();
+  await catalog.clickCatalogBase();
   
 
   const items = await catalog.getSummaryItems();

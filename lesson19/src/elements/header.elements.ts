@@ -5,11 +5,11 @@ export class HeaderElement {
         return this.baseLocator.locator('//button[@data-testid="fat_menu_btn"]');
     }
 
-    /*private get buttonMenu(): Locator {
+    private get buttonMenu(): Locator {
         return this.baseLocator.locator('//button[@data-testid="menu_button"]');
     }
 
-    private get logo(): Locator {
+    /*private get logo(): Locator {
         return this.baseLocator.locator('//a[@class="header__logo"]');
     }
 
@@ -19,8 +19,13 @@ export class HeaderElement {
 
     public constructor(private readonly baseLocator: Locator) {}
 
-    public async clickCatalog(): Promise<void> {
+    public async clickCatalogHead(): Promise<void> {
         await this.buttonCatalog.click();
     }
+
+    public async clickButton(): Promise<void> {
+        await this.buttonMenu.click();
+    }
+
 
 }

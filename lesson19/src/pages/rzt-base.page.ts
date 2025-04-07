@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 import { HeaderElement } from "src/elements/header.elements";
 
 export class RztBasePage {
@@ -8,5 +8,10 @@ export class RztBasePage {
         this.page = page;
         this.header = new HeaderElement(this.page.locator('//header[@class="header"]'))
     }
+
+    public async clickCatalogBase(): Promise<void>{
+        await this.header.clickCatalogHead();
+        await expect(this.page.locator('.layout-content.d-flex')).toBeVisible();
+    }    
 
 }

@@ -2,20 +2,22 @@ import { expect, Locator, Page } from '@playwright/test';
 import { Layoutlement } from 'src/elements/rzt-layout.elements';
 import { SummeryItemElement } from 'src/elements/summery-item.elements';
 import { RztBasePage } from './rzt-base.page';
+import { HeaderElement } from 'src/elements/header.elements';
 
 export class RztWorkPage extends RztBasePage {
 
     private get summaryItem(): Locator {
-        //return this.page.locator('.d-flex>section>rz-category-goods .item');
         return this.page.locator('//rz-category-goods//rz-product-tile');
     }
 
     private layoutElement: Layoutlement;
+    private head: HeaderElement;
 
 
     public constructor(page: Page) {
         super(page);
         this.layoutElement = new Layoutlement(this.page.locator('.layout-content.d-flex'));
+        this.head = new HeaderElement(this.page.locator('//header[@class="header"]'))
     }
 
     public async getSummaryItems(): Promise<SummeryItemElement[]> {
@@ -33,10 +35,9 @@ export class RztWorkPage extends RztBasePage {
         await expect(this.page).toHaveTitle(/Інтернет-магазин ROZETKA™: офіційний сайт онлайн-гіпермаркету Розетка в Україні/);
     }
 
-    public async clickCatalog(): Promise<void>{
-        await this.page.locator('button.button--medium.button--with-icon.fat-menu').click();
-        await expect(this.page.locator('.layout-content.d-flex')).toBeVisible();
+    public async clickButtonCatalog(): Promise<void> {
+        await this.head.clickCatalogHead();
     }
 
-    
+   
 }
