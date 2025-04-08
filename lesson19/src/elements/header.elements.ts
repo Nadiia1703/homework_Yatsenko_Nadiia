@@ -9,17 +9,11 @@ export class HeaderElement {
         return this.baseLocator.locator('//button[@data-testid="menu_button"]');
     }
 
-    /*private get logo(): Locator {
-        return this.baseLocator.locator('//a[@class="header__logo"]');
-    }
-
-    private get search(): Locator {
-        return this.baseLocator.locator('//div[@class="header-search"]');
-    }*/
-
     public constructor(private readonly baseLocator: Locator) {}
 
     public async clickCatalogHead(): Promise<void> {
+        await this.baseLocator.waitFor({ state: 'visible' });
+        await this.baseLocator.hover();
         await this.buttonCatalog.click();
     }
 

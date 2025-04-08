@@ -20,9 +20,9 @@ export class RztWorkPage extends RztBasePage {
         this.head = new HeaderElement(this.page.locator('//header[@class="header"]'))
     }
 
-    public async getSummaryItems(): Promise<SummeryItemElement[]> {
-        await this.layoutElement.selectFatMenu('Ноутбуки та комп’ютери');
-        await this.layoutElement.selectSubMenu('Ноутбуки');
+    public async getSummaryItems(category: string, subCategory: string): Promise<SummeryItemElement[]> {
+        await this.layoutElement.selectFatMenu(category);
+        await this.layoutElement.selectSubMenu(subCategory);
         
         await this.summaryItem.first().waitFor({ state: 'visible'});
         const items = await this.summaryItem.all();
@@ -31,7 +31,7 @@ export class RztWorkPage extends RztBasePage {
 
 
     public async goTo(): Promise<void> {
-        await this.page.goto('https://rozetka.com.ua/ua/');
+        await this.page.goto('https://rozetka.com.ua/ua/', { waitUntil: 'domcontentloaded' });
         await expect(this.page).toHaveTitle(/Інтернет-магазин ROZETKA™: офіційний сайт онлайн-гіпермаркету Розетка в Україні/);
     }
 
