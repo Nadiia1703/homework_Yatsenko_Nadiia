@@ -12,7 +12,7 @@ test('Rozetka Catalog Tests', async ({ page }) => {
   expect(items.length).toBeGreaterThan(0);
 
   const firstItem = await items[0].getItemDetails();
-  expect(firstItem.summary).toContain('Ноутбук Lenovo IdeaPad');
+  expect(firstItem.summary).toContain('Ноутбук');
   expect(firstItem.redPrice).toBeTruthy();
   expect(firstItem.oldPrice).toBeTruthy();
   

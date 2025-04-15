@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="13.716" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-10T13:13:04.764Z">
+  <testcase classname="RZT Cucumber.js Autotest" name="Verify catalog items" time="12.368">
+    <system-out><![CDATA[Given Rozetka Catalog Tests.................................................passed
+When open catalog...........................................................passed
+Then I should see laptop items..............................................passed]]></system-out>
+  </testcase>
+</testsuite>

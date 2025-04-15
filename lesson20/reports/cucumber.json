@@ -1,0 +1,95 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rzt-cucumber.js-autotest;verify-catalog-items",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify catalog items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63187300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 355324499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Rozetka Catalog Tests",
+            "match": {
+              "location": "file:\\C:\\QA_Lead\\%D0%9A%D1%83%D1%80%D1%81%D0%B8\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson20\\src\\steps\\rzt-catalog.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6152302499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "open catalog",
+            "match": {
+              "location": "file:\\C:\\QA_Lead\\%D0%9A%D1%83%D1%80%D1%81%D0%B8\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson20\\src\\steps\\rzt.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4737204299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see laptop items",
+            "match": {
+              "location": "file:\\C:\\QA_Lead\\%D0%9A%D1%83%D1%80%D1%81%D0%B8\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson20\\src\\steps\\rzt.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 859226500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63483099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 100570600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rzt-cucumber.js-autotest",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RZT Cucumber.js Autotest",
+    "tags": [],
+    "uri": "features\\rzt.feature"
+  }
+]
