@@ -1,0 +1,313 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-15T19:44:24.134Z",
+    "end": "2025-04-15T19:44:24.152Z",
+    "duration": 18,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a63d6927-276a-44a3-838e-e57ea1a96c84",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ca41d2f7-6d9e-46bd-abf9-5b4cbe57964d",
+          "title": "tttt",
+          "fullFile": "C:\\QA_Lead\\Курси\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson10\\mocha\\tests\\m-first-test.spec.ts",
+          "file": "\\tests\\m-first-test.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "6e96bbba-16f8-4ac9-94d7-a0b423e2caf8",
+              "title": "test1 ",
+              "fullFile": "C:\\QA_Lead\\Курси\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson10\\mocha\\tests\\m-first-test.spec.ts",
+              "file": "\\tests\\m-first-test.spec.ts",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "2 + 2 = 4",
+                  "fullTitle": "tttt test1  2 + 2 = 4",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(0,import_chai.expect)(2+2).to.be.equal(4)",
+                  "err": {},
+                  "uuid": "5534c858-c527-44aa-aa26-8abe1c1ef769",
+                  "parentUUID": "6e96bbba-16f8-4ac9-94d7-a0b423e2caf8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "5534c858-c527-44aa-aa26-8abe1c1ef769"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4e2c58b5-d084-474f-b4f3-a194e6c5e03b",
+          "title": "test2 2 + 2 <>5 ",
+          "fullFile": "C:\\QA_Lead\\Курси\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson10\\mocha\\tests\\m-first-test.spec.ts",
+          "file": "\\tests\\m-first-test.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "put ",
+              "fullTitle": "test2 2 + 2 <>5  put ",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "sum=2+2",
+              "err": {},
+              "uuid": "861edb54-a05d-403d-98be-262d0c626f2b",
+              "parentUUID": "4e2c58b5-d084-474f-b4f3-a194e6c5e03b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "chech 5",
+              "fullTitle": "test2 2 + 2 <>5  chech 5",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0,import_chai.expect)(sum).to.be.equal(4)",
+              "err": {},
+              "uuid": "626388f3-0902-4e5f-b32b-5d0f96067df0",
+              "parentUUID": "4e2c58b5-d084-474f-b4f3-a194e6c5e03b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "861edb54-a05d-403d-98be-262d0c626f2b",
+            "626388f3-0902-4e5f-b32b-5d0f96067df0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+          "title": "Unit test suit",
+          "fullFile": "C:\\QA_Lead\\Курси\\RD_auto\\Source\\howework\\homework_Yatsenko_Nadiia\\lesson10\\mocha\\tests\\unit-test.spec.ts",
+          "file": "\\tests\\unit-test.spec.ts",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Unit test suit\"",
+              "fullTitle": "Unit test suit \"before each\" hook in \"Unit test suit\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "consoleLogSpy=import_sinon.default.spy(console,\"log\")",
+              "err": {},
+              "uuid": "6fd7dba4-39c1-4112-aaf6-7b23b253b007",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Unit test suit\"",
+              "fullTitle": "Unit test suit \"after each\" hook in \"Unit test suit\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "consoleLogSpy.restore()",
+              "err": {},
+              "uuid": "0a69d8e5-afcf-4234-bcc7-dda22b98d417",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return correct info for Earth",
+              "fullTitle": "Unit test suit should return correct info for Earth",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const earth=new import_earth_planet.EarthPlanet(\"Earth\",6741);const info=earth.getInfo();(0,import_chai.expect)(info).to.deep.equal(\"\\u041F\\u043B\\u0430\\u043D\\u0435\\u0442\\u0430: Earth, \\u0420\\u0430\\u0434\\u0456\\u0443\\u0441: 6741 \\u043A\\u043C Satellite: Moon, radius satellite: 1737, quantity satellites: 1\")",
+              "err": {},
+              "uuid": "aad1d247-e8e6-4035-9c6e-60b87bb43dda",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return correct info for Saturn",
+              "fullTitle": "Unit test suit should return correct info for Saturn",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const saturn=new import_saturn_palent.SaturnPlanet(\"Saturn\",7854);const info=saturn.getInfo();(0,import_chai.expect)(info).to.contain(\"Saturn\")",
+              "err": {},
+              "uuid": "66ed49fe-c9bf-48af-aac0-3e9c51b5681e",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should call getPlanetInfo method",
+              "fullTitle": "Unit test suit should call getPlanetInfo method",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const earth=new import_earth_planet.EarthPlanet(\"Earth\",6741);(0,import_src.getPlanetInfo)(earth);(0,import_chai.expect)(consoleLogSpy.calledOnce).to.be.true;(0,import_chai.expect)(consoleLogSpy.calledWith(\"getPlanetInfo\",\"\\u041F\\u043B\\u0430\\u043D\\u0435\\u0442\\u0430: Earth, \\u0420\\u0430\\u0434\\u0456\\u0443\\u0441: 6741 \\u043A\\u043C Satellite: Moon, radius satellite: 1737, quantity satellites: 1\")).to.be.true",
+              "err": {},
+              "uuid": "e4b00143-0fd5-43e5-a877-abf5140f5a14",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should call getInfo method",
+              "fullTitle": "Unit test suit should call getInfo method",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const earth=new import_earth_planet.EarthPlanet(\"EarthTwo\",6741);const saturn=new import_saturn_palent.SaturnPlanet(\"SaturnTwo\",7854);const planets=[earth,saturn];const infos=planets.map(p=>p.getInfo());(0,import_chai.expect)(infos).to.deep.equal([\"\\u041F\\u043B\\u0430\\u043D\\u0435\\u0442\\u0430: EarthTwo, \\u0420\\u0430\\u0434\\u0456\\u0443\\u0441: 6741 \\u043A\\u043C Satellite: Moon, radius satellite: 1737, quantity satellites: 1\",\"\\u041F\\u043B\\u0430\\u043D\\u0435\\u0442\\u0430: SaturnTwo, \\u0420\\u0430\\u0434\\u0456\\u0443\\u0441: 7854 \\u043A\\u043C Satellite: Titan, radius satellite: 2575, quantity satellites: 1,Satellite: Reya, radius satellite: 764, quantity satellites: 2\"])",
+              "err": {},
+              "uuid": "bfc94b19-2793-4796-b09b-45f52c73af65",
+              "parentUUID": "6e16b9e8-47cf-477b-af6c-dedf0fd310c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aad1d247-e8e6-4035-9c6e-60b87bb43dda",
+            "66ed49fe-c9bf-48af-aac0-3e9c51b5681e",
+            "e4b00143-0fd5-43e5-a877-abf5140f5a14",
+            "bfc94b19-2793-4796-b09b-45f52c73af65"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "[object Object]": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
